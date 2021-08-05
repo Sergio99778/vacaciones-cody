@@ -1,38 +1,83 @@
-nav{
-  background-color: aliceblue;
-  padding: 15px;
-  display: flex;
-  gap:1em;
-}
-
-main{
+main {
   text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+  font-family: sans-serif;
 }
 
-section{
+section {
   margin-top: 3rem;
 }
 
-.cursos div{
+.cursos div {
   background-color: black;
   color: white;
   max-width: 200px;
   display: inline-block;
   box-shadow: 5px 5px 10px black;
 }
-.fotos img{
+.fotos img {
   max-width: 450px;
   display: inline-block;
-}
-ul li{
-  text-align: left;
 }
 ul li::marker {
   content: "🚀";
 }
+.nav--item {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  padding: 15px;
+  background-color: #ffffff47;
+  border-radius: 15%;
+  font-size: 1.4rem;
+  border: #ffffff63 solid 1px;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  /* letter-spacing: 0.15em; */
+}
 
-ol li{
-  text-align: left;
+.nav--item:hover {
+  transform: scale(1.1);
+  opacity: 87%;
+}
+
+.main--header {
+  background-image: url("../images/main__background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100vw;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.main--header nav { 
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main--header p {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.main--header__title:after {    
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.main--header__title:hover:after { 
+  width: 80%; 
+  left: 10%;
 }
