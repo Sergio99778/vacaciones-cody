@@ -1,14 +1,23 @@
 main {
   text-align: center;
   font-family: sans-serif;
+  color: white;
+}
+
+h1,h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+a { 
+  text-decoration: underline;
+  color: white;
+  text-transform: uppercase;
 }
 
 .cursos div {
-  background-color: black;
-  color: white;
-  max-width: 200px;
-  display: inline-block;
-  box-shadow: 5px 5px 10px black;
+  margin: 20px 10px 0px 10px ; 
+  display: inline-flex;
+  
 }
 .fotos img {
   max-width: 450px;
@@ -28,6 +37,7 @@ ul li::marker {
   border: #ffffff63 solid 1px;
   transition: all 0.3s;
   text-transform: uppercase;
+  cursor: pointer;
   /* letter-spacing: 0.15em; */
 }
 
@@ -61,13 +71,8 @@ ul li::marker {
   font-weight: 600;
   font-size: 1.3rem;
 }
-
-h1,h2 {
-  font-size: 3rem;
-  color: #fff;
-}
 .main--header__title  {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .main--header__title:after {    
@@ -113,4 +118,11 @@ section p {
 }
 .section--importancia { 
   background-image: url("../images/aerial-view-of-container-cargo-ship-in-sea.jpg");
+}
+
+.section--content { 
+  padding: 15px;
+  background-color: #ffffff38;
+  border-radius: 2px;
+  border: #ffffff63 solid 1px;
 }
