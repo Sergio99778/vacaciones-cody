@@ -23,9 +23,7 @@ a {
   max-width: 450px;
   display: inline-block;
 }
-ul li::marker {
-  content: "🚀";
-}
+
 .nav--item {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -72,7 +70,7 @@ ul li::marker {
   font-size: 1.3rem;
 }
 .main--header__title  {
-  margin-bottom: 5%;
+  margin-bottom: 1%;
 }
 
 .main--header__title:after {    
@@ -125,4 +123,13 @@ section p {
   background-color: #ffffff38;
   border-radius: 2px;
   border: #ffffff63 solid 1px;
+}
+
+.list--item { 
+  list-style: none;
+  width: 80%;
+  background-color: aqua;
+  border: solid black 1px;
+  height: 10vh;
+  margin: 0 auto;
 }
